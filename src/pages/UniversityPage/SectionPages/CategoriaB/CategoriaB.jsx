@@ -5,6 +5,8 @@ import s from './CategoriaB.module.scss';
 
 import { listQuestionCategoriaB } from '../../material/listQuestion.js';
 
+import diagrams from '../../../../drawio/categoriaB';
+
 export const CategoriaB = () => {
   return (
     <>
@@ -24,6 +26,7 @@ export const CategoriaB = () => {
               cupiditate porro aperiam totam ipsum voluptatibus dolorem. Voluptate, sunt! Molestiae
               aperiam nemo debitis aliquam quia enim non porro!
             </p>
+            <img src={diagrams.q0_test} className={s.svg} alt="" />
           </Platform>
         </li>
       </ul>

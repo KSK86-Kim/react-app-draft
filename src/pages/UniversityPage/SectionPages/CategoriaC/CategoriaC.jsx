@@ -1,9 +1,10 @@
 import Platform from '../../../../components/Platform';
 import ListQuestion from '../../../../components/ListQuestion';
+import { listQuestionCategoriaC } from '../../material/listQuestion.js';
 
 import s from './CategoriaC.module.scss';
 
-import { listQuestionCategoriaC } from '../../material/listQuestion.js';
+import diagrams from '../../../../drawio/categoriaC';
 
 export const CategoriaC = () => {
   return (
@@ -24,6 +25,7 @@ export const CategoriaC = () => {
               cupiditate porro aperiam totam ipsum voluptatibus dolorem. Voluptate, sunt! Molestiae
               aperiam nemo debitis aliquam quia enim non porro!
             </p>
+            <img src={diagrams.q0_test} className={s.svg} alt="" />
           </Platform>
         </li>
       </ul>
