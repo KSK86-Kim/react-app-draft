@@ -1,6 +1,6 @@
 import Platform from '../../../../components/Platform';
 import ListQuestion from '../../../../components/ListQuestion';
-
+import qwe from '../../../../drawio/categoriaA/Untitled Diagram.svg';
 import s from './CategoriaA.module.scss';
 
 import { listQuestionCategoriaA } from '../../material/listQuestion.js';
@@ -24,6 +24,7 @@ export const CategoriaA = () => {
               cupiditate porro aperiam totam ipsum voluptatibus dolorem. Voluptate, sunt! Molestiae
               aperiam nemo debitis aliquam quia enim non porro!
             </p>
+            <img src={qwe} className={s.svg} alt="" />
           </Platform>
         </li>
       </ul>
