@@ -1,0 +1,13 @@
+@import './reIndex.scss';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 180%;
+
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  color: $main-font-color;
+  background-color: $background-dark;
+}
