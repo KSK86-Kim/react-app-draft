@@ -3,14 +3,11 @@ import { Suspense } from 'react';
 
 import { CategoriaA, CategoriaB, CategoriaC, CategoriaD } from './SectionPages/routes';
 
-import { UniversityLink } from '../../components/CustomLink';
 import Container from '../../components/Container';
 import NavUniversity from '../../components/navUniversity';
 
 import s from './UniversityPage.module.scss';
 import css from '../../styles/visually-hidden.module.scss';
-
-const isActive = ({ isActive }) => (isActive ? 'sasas' : 'qweqw');
 
 const UniversityPage = () => {
   return (

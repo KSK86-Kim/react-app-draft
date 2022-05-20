@@ -5,6 +5,7 @@ import { listQuestionCategoriaA } from '../../material/listQuestion.js';
 import s from './CategoriaA.module.scss';
 
 import diagrams from '../../../../drawio/categoriaA';
+import testSVG from '../../../../svg/pravo1.svg';
 
 export const CategoriaA = () => {
   return (
@@ -25,7 +26,8 @@ export const CategoriaA = () => {
               cupiditate porro aperiam totam ipsum voluptatibus dolorem. Voluptate, sunt! Molestiae
               aperiam nemo debitis aliquam quia enim non porro!
             </p>
-            <img src={diagrams.q0_test} className={s.svg} alt="" />
+            {/* <img src={diagrams.q0_test} className={s.svg} alt="" /> */}
+            <img src={testSVG} className={s.svg} alt="" />
           </Platform>
         </li>
       </ul>
