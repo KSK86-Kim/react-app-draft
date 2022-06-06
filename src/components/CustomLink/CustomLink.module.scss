@@ -1,13 +1,6 @@
-@import '../../styles/reIndex.scss';
-
 .link {
-  color: $nav-web-font-color;
-  text-decoration: none;
-  &__active {
-    color: $nav-web-font-color-active;
-  }
-  &:hover,
-  &:focus {
-    color: $nav-web-font-color-hover;
+  color: rgb(205, 228, 0);
+  &_active {
+    color: aquamarine;
   }
 }

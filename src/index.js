@@ -1,15 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import 'modern-normalize/modern-normalize.css';
-import './styles/base.scss';
 import App from './App';
+import './normalize.css';
+import './index.scss';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
+// исправление с рендером модалки
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <h1>hi, model</h1>
+//   </React.StrictMode>,
+//   document.getElementById('modal')
+// );

@@ -1,26 +1,39 @@
-import { Route, Routes } from 'react-router-dom';
-import { Suspense } from 'react';
+// пакети
+import { Routes, Route } from 'react-router-dom';
+//  end
 
-import { HomePage, UniversityPage, DefualtPage } from './routes';
+// базавая настройка шапки и подвала, маршутизация
+import AppLayout from './Components/AppLayout';
+//  end
 
-import Layout from './components/Layout';
+// страници
+import HomePage from './Pages/HomePage';
 
-import PravoPege from './pages/testPage/pravoPege.jsx';
+import NoticeboardPage from './Pages/NoticeboardPage';
 
-export default function App() {
+import ArticlesPage from './Pages/ArticlesPage';
+import ArticlePage from './Pages/ArticlePage';
+
+import NotFoundPage from './Pages/NotFoundPage';
+//  end
+
+const App = () => {
   return (
     <>
-      <Suspense fallback={<>...</>}>
-        <Routes>
-          <Route path={HomePage.path} element={<Layout />}>
-            <Route index element={<HomePage.element text="qwe" />} />
-            <Route path={UniversityPage.path} element={<UniversityPage.element />} />
-            <Route path={DefualtPage.path} element={<DefualtPage.element />} />
-          </Route>
-          {/* <Route path="/test" element={<h1>Ghbdtdtn</h1>}></Route> */}
-          <Route path="/test/pravo" element={<PravoPege />} />
-        </Routes>
-      </Suspense>
+      <Routes>
+        <Route path="/" element={<AppLayout />}>
+          <Route index element={<HomePage />} />
+
+          <Route path="noticeboard" element={<NoticeboardPage />} />
+
+          <Route path="articles" element={<ArticlesPage />} />
+          <Route path="articles/:id" element={<ArticlePage />} />
+
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
     </>
   );
-}
+};
+
+export default App;
