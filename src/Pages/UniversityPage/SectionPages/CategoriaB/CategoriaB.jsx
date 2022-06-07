@@ -262,7 +262,7 @@ export const CategoriaB = () => {
             <h3 id="q-27" className={s.answers__title}>
               {listQuestionCategoriaB[26].question}
             </h3>
-            <Q28 />
+            <Q27 />
           </Platform>
         </li>
         <li className={s.answers__item}>

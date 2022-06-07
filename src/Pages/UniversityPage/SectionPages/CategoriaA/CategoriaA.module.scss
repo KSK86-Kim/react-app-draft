@@ -21,7 +21,7 @@
   }
 }
 
-.answer {
+.answers {
   &__list {
     padding: 0;
     margin: 0;
@@ -44,7 +44,7 @@
 
     letter-spacing: 0.02em;
     @media screen and(max-width: $bp-mobile) {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 140%;
     }
 
@@ -53,23 +53,12 @@
       line-height: 150%;
     }
   }
-
-  &__paragraph {
-    letter-spacing: 0.02em;
-    @media screen and(max-width: $bp-mobile) {
-      font-size: 14px;
-      line-height: 180%;
-    }
-
-    @media screen and(min-width: $bp-mobile) {
-      font-size: 18px;
-      line-height: 150%;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-  }
 }
 
 .svg {
   width: 100%;
+}
+
+a {
+  color: #02de8c;
 }
