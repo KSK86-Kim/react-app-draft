@@ -14,7 +14,7 @@ export const Q26 = () => {
           м’язового скорочення.
         </li>
         <li className={s.answer__item}>
-          <strong>Тактичні вміння </strong> <br />
+          <strong>Вибуховою силою </strong> <br />
           здатність долати опір з високою швидкістю м’язового скорочення.
         </li>
         <li className={s.answer__item}>
