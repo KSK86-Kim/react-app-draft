@@ -1,6 +1,6 @@
 import s from './AnswersC.module.scss';
 
-export const Q17 = () => {
+export const Q18 = () => {
   return (
     <>
       <p className={s.answer__paragraph}>
