@@ -17,9 +17,3 @@ export const CategoriaC = {
   // exact: true,
   element: lazy(() => import('./CategoriaC/CategoriaC.jsx' /* webpackChunkName: "CategoriaC" */)),
 };
-
-export const CategoriaD = {
-  path: 'categoriaD',
-  // exact: true,
-  element: lazy(() => import('./CategoriaD/CategoriaD.jsx' /* webpackChunkName: "CategoriaD" */)),
-};

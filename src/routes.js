@@ -36,3 +36,8 @@ export const DefualtPage = {
   // exact: true,
   element: lazy(() => import('./pages/DefualtPage' /* webpackChunkName: "defualt-page" */)),
 };
+
+export const TutorialPage = {
+  path: '/tutorial/*',
+  element: lazy(() => import('./pages/TutorialPage' /* webpackChunkName: "TutorialPage"*/)),
+};

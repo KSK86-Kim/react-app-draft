@@ -1,7 +1,7 @@
 import Media from 'react-media';
 
 import Container from '../Container';
-import { HomePage, UniversityPage } from '../../routes';
+import { HomePage, UniversityPage, TutorialPage } from '../../routes';
 import { CustomLink } from '../CustomLink';
 
 import menuSvg from '../../svg/menu.svg';
@@ -33,6 +33,11 @@ const Header = ({ children }) => {
                       <li className={s.nav__item}>
                         <CustomLink to={UniversityPage.path} upStyle={s.nav__link}>
                           University
+                        </CustomLink>
+                      </li>
+                      <li className={s.nav__item}>
+                        <CustomLink to={TutorialPage.path} upStyle={s.nav__link}>
+                          Tutorial
                         </CustomLink>
                       </li>
                     </ul>

@@ -1,6 +1,6 @@
 import React from 'react';
 import testSVG from '../../svg/pravo.svg';
-import s from './HomePage.scss';
+import s from './HomePage.module.scss';
 import Container from '../../components/Container';
 
 const HomePage = ({ text = 'home' }) => {

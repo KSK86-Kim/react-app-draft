@@ -38,8 +38,6 @@ import {
   Q30,
 } from './AnswersB';
 
-import diagrams from '../../../../drawio/categoriaB';
-
 export const CategoriaB = () => {
   return (
     <>

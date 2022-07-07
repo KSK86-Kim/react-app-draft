@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { Suspense } from 'react';
 
-import { HomePage, UniversityPage, DefualtPage } from './routes';
+import { HomePage, UniversityPage, DefualtPage, TutorialPage } from './routes';
 
 import Layout from './components/Layout';
 
@@ -15,6 +15,7 @@ export default function App() {
           <Route path={HomePage.path} element={<Layout />}>
             <Route index element={<HomePage.element text="qwe" />} />
             <Route path={UniversityPage.path} element={<UniversityPage.element />} />
+            <Route path={TutorialPage.path} element={<TutorialPage.element />} />
             <Route path={DefualtPage.path} element={<DefualtPage.element />} />
           </Route>
           {/* <Route path="/test" element={<h1>Ghbdtdtn</h1>}></Route> */}

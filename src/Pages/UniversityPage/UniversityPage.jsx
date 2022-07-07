@@ -1,7 +1,7 @@
 import { Route, Routes, NavLink } from 'react-router-dom';
 import { Suspense } from 'react';
 
-import { CategoriaA, CategoriaB, CategoriaC, CategoriaD } from './SectionPages/routes';
+import { CategoriaA, CategoriaB, CategoriaC } from './SectionPages/routes';
 
 import Container from '../../components/Container';
 import NavUniversity from '../../components/navUniversity';
@@ -24,7 +24,6 @@ const UniversityPage = () => {
                 <Route path={CategoriaA.path} element={<CategoriaA.element />} />
                 <Route path={CategoriaB.path} element={<CategoriaB.element />} />
                 <Route path={CategoriaC.path} element={<CategoriaC.element />} />
-                <Route path={CategoriaD.path} element={<CategoriaD.element />} />
               </Routes>
             </Suspense>
           </Container>
